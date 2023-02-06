@@ -7,7 +7,7 @@ import tqdm
 import numpy as np
 
 # APIを使うためのキー
-key = 'AIzaSyB4iZ8c6vX_tsoZEGo8StNnEqcwBsXpm6A'
+key = ''
 url = f'https://language.googleapis.com/v1beta2/documents:analyzeSentiment?key={key}'
 header = {'Content-Type': 'application/json'}
 
@@ -35,4 +35,4 @@ def Getscores(appID):
     #print(scores)
     #matplotbar.scoreplot(scores)
 
-Getscores(497214545)
+Getscores(1068366937)

@@ -85,14 +85,13 @@ def main(appID):
                 review_title = soup.find_all('entry')[i].find_all('title')[0].text
                 review_content = soup.find_all('entry')[i].find_all(type="text")[0].text
                 review_data.append([review_id, review_rating, review_title, review_content])
-    for review in review_data:
-            review_texts.append([review[1], review[3]])
-
     
-
     for review in review_data:
+        # テキストの長さが15文字以上
         if len(review[3]) > 15:
-            review_scores_texts.append([review[1], review[3]])  
+            # テキストに「広告」が含まれている
+            if "広告" in review[3]:
+                review_scores_texts.append([review[1], review[3]])  
 
     
     return review_scores_texts

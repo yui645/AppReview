@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 
 # APIを使うためのキー
-key = 'AIzaSyB4iZ8c6vX_tsoZEGo8StNnEqcwBsXpm6A'
+key = ''
 url = f'https://language.googleapis.com/v1beta2/documents:analyzeSentiment?key={key}'
 header = {'Content-Type': 'application/json'}
 
@@ -59,4 +59,4 @@ def Getcorrelation(appID):
     
     
 
-Getcorrelation(497214545)
+Getcorrelation(1068366937)
