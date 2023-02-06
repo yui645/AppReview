@@ -1,3 +1,4 @@
+#appreview.pyの「残りのレビューを取得」以下
 
 if page_count > 2:
             for page in range(2, page_count):

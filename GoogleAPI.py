@@ -17,8 +17,8 @@ scoresは[{'magnitude':x,'score':y}]の形で渡される
 """
 def Getscores(appID):
     scores = []
-    for i in tqdm.tqdm(appreview.main(appID)[0]):
-        text = i
+    for i in tqdm.tqdm(appreview.main(appID)):
+        text = i[1]
         body = {
             "document":{
                 "type":"PLAIN_TEXT",

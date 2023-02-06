@@ -23,7 +23,7 @@ excel_path = "/Users/suenagayuinin/Horizon/appreview.xlsx"
 def Getcorrelation(appID):
     # レビューの評価、APIのスコア、レビューテキスト
     review_data = []
-    for i in tqdm.tqdm(appreview.main(appID)[1]):
+    for i in tqdm.tqdm(appreview.main(appID)):
         text = i[1]
         body = {
             "document":{

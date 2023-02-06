@@ -86,10 +86,13 @@ def main(appID):
                 review_content = soup.find_all('entry')[i].find_all(type="text")[0].text
                 review_data.append([review_id, review_rating, review_title, review_content])
     for review in review_data:
-            review_texts.append(review[3])  
+            review_texts.append([review[1], review[3]])
+
+    
 
     for review in review_data:
+        if len(review[3]) > 15:
             review_scores_texts.append([review[1], review[3]])  
 
     
-    return review_texts,review_scores_texts
+    return review_scores_texts
