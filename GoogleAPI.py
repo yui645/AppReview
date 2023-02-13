@@ -7,7 +7,7 @@ import tqdm
 import numpy as np
 
 # APIを使うためのキー
-key = ''
+key = 'AIzaSyB4iZ8c6vX_tsoZEGo8StNnEqcwBsXpm6A'
 url = f'https://language.googleapis.com/v1beta2/documents:analyzeSentiment?key={key}'
 header = {'Content-Type': 'application/json'}
 

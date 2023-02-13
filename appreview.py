@@ -88,9 +88,9 @@ def main(appID):
     
     for review in review_data:
         # テキストの長さが15文字以上
-        if len(review[3]) > 15:
+        #if len(review[3]) > 15:
             # テキストに「広告」が含まれている
-            if "広告" in review[3]:
+            #if "広告" in review[3]:
                 review_scores_texts.append([review[1], review[3]])  
 
     
